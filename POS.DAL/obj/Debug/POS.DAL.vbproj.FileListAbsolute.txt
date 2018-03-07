@@ -1,0 +1,16 @@
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.DAL.dll.config
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.DAL.dll
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.DAL.pdb
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.DAL.xml
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\Common.dll
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.Model.dll
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\Common.pdb
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\Common.xml
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.Model.pdb
+C:\_CODE\Pos\POS_Solution\POS.DAL\bin\Debug\POS.Model.xml
+C:\_CODE\Pos\POS_Solution\POS.DAL\obj\Debug\POS.DAL.vbprojResolveAssemblyReference.cache
+C:\_CODE\Pos\POS_Solution\POS.DAL\obj\Debug\POS.DAL.Resources.resources
+C:\_CODE\Pos\POS_Solution\POS.DAL\obj\Debug\POS.DAL.vbproj.GenerateResource.Cache
+C:\_CODE\Pos\POS_Solution\POS.DAL\obj\Debug\POS.DAL.dll
+C:\_CODE\Pos\POS_Solution\POS.DAL\obj\Debug\POS.DAL.xml
+C:\_CODE\Pos\POS_Solution\POS.DAL\obj\Debug\POS.DAL.pdb

@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="POSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="N_CUST_SALE_SLIP_TRAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="CUST_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SALE_SLIP_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DETAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="STK_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Int32" />
+    <Property Name="PROD_CODE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PRICE" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="10" Scale="0" />
+  </EntityType>
+  <EntityType Name="MCUST">
+    <Key>
+      <PropertyRef Name="id_no" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TITLE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ENG_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="REGION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="COLL_DAYS" Type="Double" />
+    <Property Name="CR_DAYS" Type="Double" />
+    <Property Name="CR_LIMIT" Type="Double" />
+    <Property Name="CR_LIMIT_D" Type="DateTime" Precision="3" />
+    <Property Name="CR_HIST1" Type="Double" />
+    <Property Name="CR_HIST1_D" Type="DateTime" Precision="3" />
+    <Property Name="CR_HIST2" Type="Double" />
+    <Property Name="CR_HIST2_D" Type="DateTime" Precision="3" />
+    <Property Name="B_F_BK_AMT" Type="Double" />
+    <Property Name="B_F_AMT" Type="Double" />
+    <Property Name="INV_NOSPRE" Type="Double" />
+    <Property Name="BAL_AMTPRE" Type="Double" />
+    <Property Name="BAL_AMT" Type="Double" />
+    <Property Name="BAL_ADV" Type="Double" />
+    <Property Name="CR_BAL_CSH" Type="Double" />
+    <Property Name="CR_BAL_CHQ" Type="Double" />
+    <Property Name="INT_RATE" Type="Double" />
+    <Property Name="INT_EXIN" Type="Double" />
+    <Property Name="STATUS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SALE_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SHIP_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_TAMBON" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_AMPHUR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_CITY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_ZIP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SHIP_PHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_TEL_EXT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_TEL_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SHIP_FAX" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_RATE" Type="Double" />
+    <Property Name="SH_TAX" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SH_BRANCH" Type="Double" />
+    <Property Name="SH_DESC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TAMBON" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AMPHUR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ZIPCODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CITY_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AMP_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TAMBON_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE_EXT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FAX" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="E_MAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_SA" Type="DateTime" Precision="3" />
+    <Property Name="RATE_PRICE" Type="Double" />
+    <Property Name="RATE_VAT" Type="Double" />
+    <Property Name="RATE_DISC1" Type="Double" />
+    <Property Name="RATE_DISC2" Type="Double" />
+    <Property Name="RATE_DISC3" Type="Double" />
+    <Property Name="ID_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID_4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NOS_PAY" Type="Double" />
+    <Property Name="AMT_P_PAY" Type="Double" />
+    <Property Name="BIRTH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SPEC_DATE" Type="DateTime" Precision="3" />
+    <Property Name="COMM_AMT" Type="Double" />
+    <Property Name="COMM_RATE" Type="Double" />
+    <Property Name="CHG_RATE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ACC_CODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DEPART_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="INV_COUNT" Type="Double" />
+    <Property Name="HIST" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FLAG" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="OFF_HOUR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="WARNING" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AMT_HIST1" Type="Double" />
+    <Property Name="AMT_HIST2" Type="Double" />
+    <Property Name="QRTN_HIST1" Type="Double" />
+    <Property Name="QRTN_HIST2" Type="Double" />
+    <Property Name="QRTN_TIME1" Type="Double" />
+    <Property Name="QRTN_TIME2" Type="Double" />
+    <Property Name="AVG_RV" Type="Double" />
+    <Property Name="ACTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DELE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="KEYACCOUNT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_AMT1" Type="Double" />
+    <Property Name="DISC_AMT2" Type="Double" />
+    <Property Name="DISC_AMT3" Type="Double" />
+    <Property Name="DISC_AMT4" Type="Double" />
+    <Property Name="DISC_AMT5" Type="Double" />
+    <Property Name="DISC_ID1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_ID2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_ID3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_ID4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_ID5" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_1" Type="Double" />
+    <Property Name="DISC_2" Type="Double" />
+    <Property Name="DISC_3" Type="Double" />
+    <Property Name="DISC_4" Type="Double" />
+    <Property Name="DISC_5" Type="Double" />
+    <Property Name="RTN_CHQ_FG" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TAX_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BRANCH_NO" Type="Double" />
+    <Property Name="BRANCHNAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ATTN_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_5" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_5" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_6" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_6" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_8" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_8" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_5" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_6" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_8" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEL_10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SHIP_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NOTES_RV" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISUPDATE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CARD_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SIGN_LOCA" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CARDSTART" Type="DateTime" Precision="3" />
+    <Property Name="CARDEND" Type="DateTime" Precision="3" />
+    <Property Name="CASH_DISC" Type="Double" />
+    <Property Name="CARD_DISC" Type="Double" />
+    <Property Name="SENDMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ACTIVE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_COMP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_CONTACT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_AMPHUR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_TAMBON" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_CITY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_ZIPCODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_PHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G1_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_COMP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_CONTACT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_AMPHUR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_TAMBON" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_CITY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_ZIPCODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_PHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="G2_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="id_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="POSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="N_CUST_SALE_SLIP_TRAN" EntityType="Self.N_CUST_SALE_SLIP_TRAN" />
+    <EntitySet Name="MCUST" EntityType="Self.MCUST" />
+    <FunctionImport Name="usp_cust_read" ReturnType="Collection(POSModel.usp_cust_read_Result)">
+      <Parameter Name="ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_head_insert">
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_head_Read" ReturnType="Collection(POSModel.usp_saleSlip_head_Read_Result)">
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+      <Parameter Name="UpdateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_head_running_read" ReturnType="Collection(String)">
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_head_search_doc_Read" ReturnType="Collection(POSModel.usp_saleSlip_head_search_doc_Read_Result)">
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_head_update">
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="UpdateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_tran_cancel_update">
+      <Parameter Name="id" Mode="In" Type="String" />
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="detail" Mode="In" Type="String" />
+      <Parameter Name="stk_id" Mode="In" Type="String" />
+      <Parameter Name="qty" Mode="In" Type="Int32" />
+      <Parameter Name="prod_code" Mode="In" Type="String" />
+      <Parameter Name="price" Mode="In" Type="Decimal" />
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="UpdateDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_tran_insert">
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="prod_code" Mode="In" Type="String" />
+      <Parameter Name="detail" Mode="In" Type="String" />
+      <Parameter Name="stk_id" Mode="In" Type="String" />
+      <Parameter Name="qty" Mode="In" Type="String" />
+      <Parameter Name="price" Mode="In" Type="Decimal" />
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_tran_Read" ReturnType="Collection(POSModel.usp_saleSlip_tran_Read_Result)">
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="prod_code" Mode="In" Type="String" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_saleSlip_tran_update">
+      <Parameter Name="id" Mode="In" Type="String" />
+      <Parameter Name="cust_id" Mode="In" Type="String" />
+      <Parameter Name="sale_slip_id" Mode="In" Type="String" />
+      <Parameter Name="detail" Mode="In" Type="String" />
+      <Parameter Name="stk_id" Mode="In" Type="String" />
+      <Parameter Name="qty" Mode="In" Type="Int32" />
+      <Parameter Name="prod_code" Mode="In" Type="String" />
+      <Parameter Name="price" Mode="In" Type="Decimal" />
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="UpdateDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_StockOnhand_Read" ReturnType="Collection(POSModel.usp_StockOnhand_Read_Result)">
+      <Parameter Name="PROD_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="MSTK_BR" EntityType="POSModel.MSTK_BR" />
+    <EntitySet Name="MBOOK" EntityType="POSModel.MBOOK" />
+  </EntityContainer>
+  <ComplexType Name="usp_cust_read_Result">
+    <Property Type="String" Name="ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="NAME" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TITLE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ENG_NAME" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="REGION" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="COLL_DAYS" Nullable="true" />
+    <Property Type="Double" Name="CR_DAYS" Nullable="true" />
+    <Property Type="Double" Name="CR_LIMIT" Nullable="true" />
+    <Property Type="DateTime" Name="CR_LIMIT_D" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="CR_HIST1" Nullable="true" />
+    <Property Type="DateTime" Name="CR_HIST1_D" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="CR_HIST2" Nullable="true" />
+    <Property Type="DateTime" Name="CR_HIST2_D" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="B_F_BK_AMT" Nullable="true" />
+    <Property Type="Double" Name="B_F_AMT" Nullable="true" />
+    <Property Type="Double" Name="INV_NOSPRE" Nullable="true" />
+    <Property Type="Double" Name="BAL_AMTPRE" Nullable="true" />
+    <Property Type="Double" Name="BAL_AMT" Nullable="true" />
+    <Property Type="Double" Name="BAL_ADV" Nullable="true" />
+    <Property Type="Double" Name="CR_BAL_CSH" Nullable="true" />
+    <Property Type="Double" Name="CR_BAL_CHQ" Nullable="true" />
+    <Property Type="Double" Name="INT_RATE" Nullable="true" />
+    <Property Type="Double" Name="INT_EXIN" Nullable="true" />
+    <Property Type="String" Name="STATUS" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TYPE_1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TYPE_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SALE_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SHIP_NAME" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_NAME" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_ADDRESS" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_TAMBON" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_AMPHUR" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_CITY" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_ZIP" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SHIP_PHONE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_TEL_EXT" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SH_TEL_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SHIP_FAX" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="SH_RATE" Nullable="true" />
+    <Property Type="String" Name="SH_TAX" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="SH_BRANCH" Nullable="true" />
+    <Property Type="String" Name="SH_DESC" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ADDRESS" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TAMBON" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="AMPHUR" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CITY" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ZIPCODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CITY_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="AMP_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TAMBON_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="PHONE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="PHONE_EXT" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="PHONE_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="FAX" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="E_MAIL" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="LAST_SA" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="RATE_PRICE" Nullable="true" />
+    <Property Type="Double" Name="RATE_VAT" Nullable="true" />
+    <Property Type="Double" Name="RATE_DISC1" Nullable="true" />
+    <Property Type="Double" Name="RATE_DISC2" Nullable="true" />
+    <Property Type="Double" Name="RATE_DISC3" Nullable="true" />
+    <Property Type="String" Name="ID_1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ID_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ID_3" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ID_4" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="NOS_PAY" Nullable="true" />
+    <Property Type="Double" Name="AMT_P_PAY" Nullable="true" />
+    <Property Type="DateTime" Name="BIRTH_DATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="SPEC_DATE" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="COMM_AMT" Nullable="true" />
+    <Property Type="Double" Name="COMM_RATE" Nullable="true" />
+    <Property Type="String" Name="CHG_RATE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ACC_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DEPART_ID" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="INV_COUNT" Nullable="true" />
+    <Property Type="String" Name="HIST" Nullable="true" />
+    <Property Type="String" Name="FLAG" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="OFF_HOUR" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="WARNING" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="AMT_HIST1" Nullable="true" />
+    <Property Type="Double" Name="AMT_HIST2" Nullable="true" />
+    <Property Type="Double" Name="QRTN_HIST1" Nullable="true" />
+    <Property Type="Double" Name="QRTN_HIST2" Nullable="true" />
+    <Property Type="Double" Name="QRTN_TIME1" Nullable="true" />
+    <Property Type="Double" Name="QRTN_TIME2" Nullable="true" />
+    <Property Type="Double" Name="AVG_RV" Nullable="true" />
+    <Property Type="String" Name="ACTION" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="DELE_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="KEYACCOUNT" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="DISC_AMT1" Nullable="true" />
+    <Property Type="Double" Name="DISC_AMT2" Nullable="true" />
+    <Property Type="Double" Name="DISC_AMT3" Nullable="true" />
+    <Property Type="Double" Name="DISC_AMT4" Nullable="true" />
+    <Property Type="Double" Name="DISC_AMT5" Nullable="true" />
+    <Property Type="String" Name="DISC_ID1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DISC_ID2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DISC_ID3" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DISC_ID4" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DISC_ID5" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="DISC_1" Nullable="true" />
+    <Property Type="Double" Name="DISC_2" Nullable="true" />
+    <Property Type="Double" Name="DISC_3" Nullable="true" />
+    <Property Type="Double" Name="DISC_4" Nullable="true" />
+    <Property Type="Double" Name="DISC_5" Nullable="true" />
+    <Property Type="String" Name="RTN_CHQ_FG" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TAX_ID" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="BRANCH_NO" Nullable="true" />
+    <Property Type="String" Name="BRANCHNAME" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ATTN_NAME" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_3" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_3" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_4" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_4" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_5" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_5" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_6" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_6" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_7" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_7" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_8" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_8" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION_9" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT_9" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="POSITION10" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CONTACT10" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_2" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_3" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_4" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_5" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_6" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_7" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_8" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_9" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="TEL_10" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SHIP_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="NOTES_RV" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ISUPDATE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CARD_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SIGN_LOCA" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="CARDSTART" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CARDEND" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="CASH_DISC" Nullable="true" />
+    <Property Type="Double" Name="CARD_DISC" Nullable="true" />
+    <Property Type="String" Name="SENDMAIL" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ACTIVE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_COMP" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_CONTACT" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_ADDRESS" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_AMPHUR" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_TAMBON" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_CITY" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_ZIPCODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_PHONE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G1_ID" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_COMP" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_CONTACT" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_ADDRESS" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_AMPHUR" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_TAMBON" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_CITY" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_ZIPCODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_PHONE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="G2_ID" Nullable="true" MaxLength="255" />
+    <Property Type="Int32" Name="id_no" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_saleSlip_head_Read_Result">
+    <Property Type="String" Name="CUST_ID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SALE_SLIP_ID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DESCRIPTION" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="CREATEDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="UPDATEDATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="usp_saleSlip_head_search_doc_Read_Result">
+    <Property Type="String" Name="sale_slip_id" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="description" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="cust_id" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_saleSlip_tran_Read_Result">
+    <Property Type="String" Name="PROD_CODE" Nullable="true" />
+    <Property Type="Decimal" Name="PRICE" Nullable="true" Precision="10" Scale="0" />
+    <Property Type="Decimal" Name="AMOUNT" Nullable="true" Precision="10" Scale="0" />
+    <Property Type="Int32" Name="QTY" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_StockOnhand_Read_Result">
+    <Property Type="String" Name="PROD_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="COST" Nullable="true" />
+    <Property Type="Double" Name="VALUONHAND" Nullable="true" />
+    <Property Type="Double" Name="STK_ONHAND" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="MSTK_BR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="REGION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TAMBON" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AMPHUR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ZIPCODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ENG_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE_EXT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FAX" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LEN_CODE" Type="Double" />
+    <Property Name="ACC_CODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FLAG" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ACTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MBOOK">
+    <Key>
+      <PropertyRef Name="BOOK_ID" />
+    </Key>
+    <Property Name="BOOK_ID" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BOOK_DESC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ENG_DESC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BOOK_FORM" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BOOK_CASE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PRT_FORM" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GL_FORM" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PREFIX" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CURR_NO" Type="Double" />
+    <Property Name="POSTFIX" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LEN_NO" Type="Double" />
+    <Property Name="CAL_VAT_FG" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="VAT_RATE" Type="Double" />
+    <Property Name="PASSWORD" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BOOK_STCK" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BOOK_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

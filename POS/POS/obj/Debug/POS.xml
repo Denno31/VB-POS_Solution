@@ -1,0 +1,132 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POS
+</name>
+</assembly>
+<members>
+<member name="T:POS.Sale.SALEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:POS.Sale.SALERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:POS.Sale.SALERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:POS.Sale">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:POS.Member.CustomerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:POS.Member.CustomerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:POS.Member.CustomerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:POS.Member">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.ActualSizeHS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.DeleteHS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.NewDocumentHS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.openfolderHS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.PrintHS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.S_B_CANC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.S_B_CANC1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.SychronizeListHS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:POS.My.Resources.Resources.SychronizeListHS1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:POS.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:POS.PO.PODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:POS.PO.SALEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:POS.PO.MPRODUCTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:POS.PO.PORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:POS.PO.SALERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:POS.PO.MPRODUCTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:POS.PO.PORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:POS.PO.SALERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:POS.PO.MPRODUCTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:POS.PO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

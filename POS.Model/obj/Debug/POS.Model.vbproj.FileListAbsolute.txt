@@ -1,0 +1,8 @@
+C:\_CODE\Pos\POS_Solution\POS.Model\bin\Debug\POS.Model.dll
+C:\_CODE\Pos\POS_Solution\POS.Model\bin\Debug\POS.Model.pdb
+C:\_CODE\Pos\POS_Solution\POS.Model\bin\Debug\POS.Model.xml
+C:\_CODE\Pos\POS_Solution\POS.Model\obj\Debug\POS.Model.Resources.resources
+C:\_CODE\Pos\POS_Solution\POS.Model\obj\Debug\POS.Model.vbproj.GenerateResource.Cache
+C:\_CODE\Pos\POS_Solution\POS.Model\obj\Debug\POS.Model.dll
+C:\_CODE\Pos\POS_Solution\POS.Model\obj\Debug\POS.Model.xml
+C:\_CODE\Pos\POS_Solution\POS.Model\obj\Debug\POS.Model.pdb

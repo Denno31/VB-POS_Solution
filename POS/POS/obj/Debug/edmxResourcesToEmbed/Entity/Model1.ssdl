@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="POSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MBOOK">
+    <Key>
+      <PropertyRef Name="BOOK_ID" />
+    </Key>
+    <Property Name="BOOK_ID" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="BOOK_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="ENG_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="BOOK_FORM" Type="nvarchar" MaxLength="255" />
+    <Property Name="BOOK_CASE" Type="nvarchar" MaxLength="255" />
+    <Property Name="PRT_FORM" Type="nvarchar" MaxLength="255" />
+    <Property Name="GL_FORM" Type="nvarchar" MaxLength="255" />
+    <Property Name="PREFIX" Type="nvarchar" MaxLength="255" />
+    <Property Name="CURR_NO" Type="float" />
+    <Property Name="POSTFIX" Type="nvarchar" MaxLength="255" />
+    <Property Name="LEN_NO" Type="float" />
+    <Property Name="CAL_VAT_FG" Type="nvarchar" MaxLength="255" />
+    <Property Name="VAT_RATE" Type="float" />
+    <Property Name="PASSWORD" Type="nvarchar" MaxLength="255" />
+    <Property Name="BOOK_STCK" Type="nvarchar" MaxLength="255" />
+    <Property Name="BOOK_TYPE" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POS.dbo.MCUST' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MCUST">
+    <Key>
+      <PropertyRef Name="id_no" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="255" />
+    <Property Name="ENG_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="REGION" Type="nvarchar" MaxLength="255" />
+    <Property Name="COLL_DAYS" Type="float" />
+    <Property Name="CR_DAYS" Type="float" />
+    <Property Name="CR_LIMIT" Type="float" />
+    <Property Name="CR_LIMIT_D" Type="datetime" />
+    <Property Name="CR_HIST1" Type="float" />
+    <Property Name="CR_HIST1_D" Type="datetime" />
+    <Property Name="CR_HIST2" Type="float" />
+    <Property Name="CR_HIST2_D" Type="datetime" />
+    <Property Name="B_F_BK_AMT" Type="float" />
+    <Property Name="B_F_AMT" Type="float" />
+    <Property Name="INV_NOSPRE" Type="float" />
+    <Property Name="BAL_AMTPRE" Type="float" />
+    <Property Name="BAL_AMT" Type="float" />
+    <Property Name="BAL_ADV" Type="float" />
+    <Property Name="CR_BAL_CSH" Type="float" />
+    <Property Name="CR_BAL_CHQ" Type="float" />
+    <Property Name="INT_RATE" Type="float" />
+    <Property Name="INT_EXIN" Type="float" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="255" />
+    <Property Name="TYPE_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="TYPE_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="SALE_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="SHIP_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_TAMBON" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_AMPHUR" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_CITY" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_ZIP" Type="nvarchar" MaxLength="255" />
+    <Property Name="SHIP_PHONE" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_TEL_EXT" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_TEL_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="SHIP_FAX" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_RATE" Type="float" />
+    <Property Name="SH_TAX" Type="nvarchar" MaxLength="255" />
+    <Property Name="SH_BRANCH" Type="float" />
+    <Property Name="SH_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="TAMBON" Type="nvarchar" MaxLength="255" />
+    <Property Name="AMPHUR" Type="nvarchar" MaxLength="255" />
+    <Property Name="CITY" Type="nvarchar" MaxLength="255" />
+    <Property Name="ZIPCODE" Type="nvarchar" MaxLength="255" />
+    <Property Name="CITY_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="AMP_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="TAMBON_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="255" />
+    <Property Name="PHONE_EXT" Type="nvarchar" MaxLength="255" />
+    <Property Name="PHONE_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="FAX" Type="nvarchar" MaxLength="255" />
+    <Property Name="E_MAIL" Type="nvarchar" MaxLength="255" />
+    <Property Name="LAST_SA" Type="datetime" />
+    <Property Name="RATE_PRICE" Type="float" />
+    <Property Name="RATE_VAT" Type="float" />
+    <Property Name="RATE_DISC1" Type="float" />
+    <Property Name="RATE_DISC2" Type="float" />
+    <Property Name="RATE_DISC3" Type="float" />
+    <Property Name="ID_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="ID_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="ID_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="ID_4" Type="nvarchar" MaxLength="255" />
+    <Property Name="NOS_PAY" Type="float" />
+    <Property Name="AMT_P_PAY" Type="float" />
+    <Property Name="BIRTH_DATE" Type="datetime" />
+    <Property Name="SPEC_DATE" Type="datetime" />
+    <Property Name="COMM_AMT" Type="float" />
+    <Property Name="COMM_RATE" Type="float" />
+    <Property Name="CHG_RATE" Type="nvarchar" MaxLength="255" />
+    <Property Name="ACC_CODE" Type="nvarchar" MaxLength="255" />
+    <Property Name="DEPART_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="INV_COUNT" Type="float" />
+    <Property Name="HIST" Type="nvarchar(max)" />
+    <Property Name="FLAG" Type="nvarchar" MaxLength="255" />
+    <Property Name="OFF_HOUR" Type="nvarchar" MaxLength="255" />
+    <Property Name="WARNING" Type="nvarchar" MaxLength="255" />
+    <Property Name="AMT_HIST1" Type="float" />
+    <Property Name="AMT_HIST2" Type="float" />
+    <Property Name="QRTN_HIST1" Type="float" />
+    <Property Name="QRTN_HIST2" Type="float" />
+    <Property Name="QRTN_TIME1" Type="float" />
+    <Property Name="QRTN_TIME2" Type="float" />
+    <Property Name="AVG_RV" Type="float" />
+    <Property Name="ACTION" Type="nvarchar" MaxLength="255" />
+    <Property Name="DELE_DATE" Type="datetime" />
+    <Property Name="KEYACCOUNT" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISC_AMT1" Type="float" />
+    <Property Name="DISC_AMT2" Type="float" />
+    <Property Name="DISC_AMT3" Type="float" />
+    <Property Name="DISC_AMT4" Type="float" />
+    <Property Name="DISC_AMT5" Type="float" />
+    <Property Name="DISC_ID1" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISC_ID2" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISC_ID3" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISC_ID4" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISC_ID5" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISC_1" Type="float" />
+    <Property Name="DISC_2" Type="float" />
+    <Property Name="DISC_3" Type="float" />
+    <Property Name="DISC_4" Type="float" />
+    <Property Name="DISC_5" Type="float" />
+    <Property Name="RTN_CHQ_FG" Type="nvarchar" MaxLength="255" />
+    <Property Name="TAX_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="BRANCH_NO" Type="float" />
+    <Property Name="BRANCHNAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="ATTN_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_4" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_4" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_5" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_5" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_6" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_6" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_7" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_7" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_8" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_8" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION_9" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT_9" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION10" Type="nvarchar" MaxLength="255" />
+    <Property Name="CONTACT10" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_3" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_4" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_5" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_6" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_7" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_8" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_9" Type="nvarchar" MaxLength="255" />
+    <Property Name="TEL_10" Type="nvarchar" MaxLength="255" />
+    <Property Name="SHIP_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="NOTES_RV" Type="nvarchar" MaxLength="255" />
+    <Property Name="ISUPDATE" Type="nvarchar" MaxLength="255" />
+    <Property Name="CARD_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="SIGN_LOCA" Type="nvarchar" MaxLength="255" />
+    <Property Name="CARDSTART" Type="datetime" />
+    <Property Name="CARDEND" Type="datetime" />
+    <Property Name="CASH_DISC" Type="float" />
+    <Property Name="CARD_DISC" Type="float" />
+    <Property Name="SENDMAIL" Type="nvarchar" MaxLength="255" />
+    <Property Name="ACTIVE" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_COMP" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_CONTACT" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_AMPHUR" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_TAMBON" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_CITY" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_ZIPCODE" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_PHONE" Type="nvarchar" MaxLength="255" />
+    <Property Name="G1_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_COMP" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_CONTACT" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_AMPHUR" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_TAMBON" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_CITY" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_ZIPCODE" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_PHONE" Type="nvarchar" MaxLength="255" />
+    <Property Name="G2_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="id_no" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MSTK_BR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="REGION" Type="nvarchar" MaxLength="255" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="255" />
+    <Property Name="TYPE_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="TAMBON" Type="nvarchar" MaxLength="255" />
+    <Property Name="AMPHUR" Type="nvarchar" MaxLength="255" />
+    <Property Name="CITY" Type="nvarchar" MaxLength="255" />
+    <Property Name="ZIPCODE" Type="nvarchar" MaxLength="255" />
+    <Property Name="ENG_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="255" />
+    <Property Name="PHONE_EXT" Type="nvarchar" MaxLength="255" />
+    <Property Name="PHONE_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="FAX" Type="nvarchar" MaxLength="255" />
+    <Property Name="HIST" Type="nvarchar(max)" />
+    <Property Name="LEN_CODE" Type="float" />
+    <Property Name="ACC_CODE" Type="nvarchar" MaxLength="255" />
+    <Property Name="FLAG" Type="nvarchar" MaxLength="255" />
+    <Property Name="ACTION" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="N_CUST_SALE_SLIP_TRAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="CUST_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SALE_SLIP_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DETAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="STK_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="QTY" Type="int" />
+    <Property Name="PROD_CODE" Type="nvarchar(max)" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="UPDATEDATE" Type="datetime" />
+    <Property Name="PRICE" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="AMOUNT" Type="decimal" Precision="10" Scale="0" />
+  </EntityType>
+  <Function Name="usp_cust_read" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_head_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="Description" Type="varchar" Mode="In" />
+    <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_head_Read" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="Description" Type="varchar" Mode="In" />
+    <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+    <Parameter Name="UpdateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_head_running_read" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_head_search_doc_Read" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_head_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="Description" Type="varchar" Mode="In" />
+    <Parameter Name="UpdateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_tran_cancel_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="varchar" Mode="In" />
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="detail" Type="varchar" Mode="In" />
+    <Parameter Name="stk_id" Type="varchar" Mode="In" />
+    <Parameter Name="qty" Type="int" Mode="In" />
+    <Parameter Name="prod_code" Type="varchar" Mode="In" />
+    <Parameter Name="price" Type="decimal" Mode="In" />
+    <Parameter Name="amount" Type="decimal" Mode="In" />
+    <Parameter Name="UpdateDate" Type="datetime" Mode="In" />
+    <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_tran_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="prod_code" Type="varchar" Mode="In" />
+    <Parameter Name="detail" Type="varchar" Mode="In" />
+    <Parameter Name="stk_id" Type="varchar" Mode="In" />
+    <Parameter Name="qty" Type="varchar" Mode="In" />
+    <Parameter Name="price" Type="decimal" Mode="In" />
+    <Parameter Name="amount" Type="decimal" Mode="In" />
+    <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_tran_Read" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="prod_code" Type="varchar" Mode="In" />
+    <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_saleSlip_tran_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="varchar" Mode="In" />
+    <Parameter Name="cust_id" Type="varchar" Mode="In" />
+    <Parameter Name="sale_slip_id" Type="varchar" Mode="In" />
+    <Parameter Name="detail" Type="varchar" Mode="In" />
+    <Parameter Name="stk_id" Type="varchar" Mode="In" />
+    <Parameter Name="qty" Type="int" Mode="In" />
+    <Parameter Name="prod_code" Type="varchar" Mode="In" />
+    <Parameter Name="price" Type="decimal" Mode="In" />
+    <Parameter Name="amount" Type="decimal" Mode="In" />
+    <Parameter Name="UpdateDate" Type="datetime" Mode="In" />
+    <Parameter Name="CreateDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_StockOnhand_Read" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PROD_CODE" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="POSModelStoreContainer">
+    <EntitySet Name="MBOOK" EntityType="Self.MBOOK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MSTK_BR" EntityType="Self.MSTK_BR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="N_CUST_SALE_SLIP_TRAN" EntityType="Self.N_CUST_SALE_SLIP_TRAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MCUST" EntityType="Self.MCUST" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MCUST].[ID] AS [ID], 
+    [MCUST].[NAME] AS [NAME], 
+    [MCUST].[TITLE] AS [TITLE], 
+    [MCUST].[ENG_NAME] AS [ENG_NAME], 
+    [MCUST].[REGION] AS [REGION], 
+    [MCUST].[COLL_DAYS] AS [COLL_DAYS], 
+    [MCUST].[CR_DAYS] AS [CR_DAYS], 
+    [MCUST].[CR_LIMIT] AS [CR_LIMIT], 
+    [MCUST].[CR_LIMIT_D] AS [CR_LIMIT_D], 
+    [MCUST].[CR_HIST1] AS [CR_HIST1], 
+    [MCUST].[CR_HIST1_D] AS [CR_HIST1_D], 
+    [MCUST].[CR_HIST2] AS [CR_HIST2], 
+    [MCUST].[CR_HIST2_D] AS [CR_HIST2_D], 
+    [MCUST].[B_F_BK_AMT] AS [B_F_BK_AMT], 
+    [MCUST].[B_F_AMT] AS [B_F_AMT], 
+    [MCUST].[INV_NOSPRE] AS [INV_NOSPRE], 
+    [MCUST].[BAL_AMTPRE] AS [BAL_AMTPRE], 
+    [MCUST].[BAL_AMT] AS [BAL_AMT], 
+    [MCUST].[BAL_ADV] AS [BAL_ADV], 
+    [MCUST].[CR_BAL_CSH] AS [CR_BAL_CSH], 
+    [MCUST].[CR_BAL_CHQ] AS [CR_BAL_CHQ], 
+    [MCUST].[INT_RATE] AS [INT_RATE], 
+    [MCUST].[INT_EXIN] AS [INT_EXIN], 
+    [MCUST].[STATUS] AS [STATUS], 
+    [MCUST].[TYPE_1] AS [TYPE_1], 
+    [MCUST].[TYPE_2] AS [TYPE_2], 
+    [MCUST].[SALE_ID] AS [SALE_ID], 
+    [MCUST].[SHIP_NAME] AS [SHIP_NAME], 
+    [MCUST].[SH_NAME] AS [SH_NAME], 
+    [MCUST].[SH_ADDRESS] AS [SH_ADDRESS], 
+    [MCUST].[SH_TAMBON] AS [SH_TAMBON], 
+    [MCUST].[SH_AMPHUR] AS [SH_AMPHUR], 
+    [MCUST].[SH_CITY] AS [SH_CITY], 
+    [MCUST].[SH_ZIP] AS [SH_ZIP], 
+    [MCUST].[SHIP_PHONE] AS [SHIP_PHONE], 
+    [MCUST].[SH_TEL_EXT] AS [SH_TEL_EXT], 
+    [MCUST].[SH_TEL_2] AS [SH_TEL_2], 
+    [MCUST].[SHIP_FAX] AS [SHIP_FAX], 
+    [MCUST].[SH_RATE] AS [SH_RATE], 
+    [MCUST].[SH_TAX] AS [SH_TAX], 
+    [MCUST].[SH_BRANCH] AS [SH_BRANCH], 
+    [MCUST].[SH_DESC] AS [SH_DESC], 
+    [MCUST].[ADDRESS] AS [ADDRESS], 
+    [MCUST].[TAMBON] AS [TAMBON], 
+    [MCUST].[AMPHUR] AS [AMPHUR], 
+    [MCUST].[CITY] AS [CITY], 
+    [MCUST].[ZIPCODE] AS [ZIPCODE], 
+    [MCUST].[CITY_ID] AS [CITY_ID], 
+    [MCUST].[AMP_ID] AS [AMP_ID], 
+    [MCUST].[TAMBON_ID] AS [TAMBON_ID], 
+    [MCUST].[PHONE] AS [PHONE], 
+    [MCUST].[PHONE_EXT] AS [PHONE_EXT], 
+    [MCUST].[PHONE_2] AS [PHONE_2], 
+    [MCUST].[FAX] AS [FAX], 
+    [MCUST].[E_MAIL] AS [E_MAIL], 
+    [MCUST].[LAST_SA] AS [LAST_SA], 
+    [MCUST].[RATE_PRICE] AS [RATE_PRICE], 
+    [MCUST].[RATE_VAT] AS [RATE_VAT], 
+    [MCUST].[RATE_DISC1] AS [RATE_DISC1], 
+    [MCUST].[RATE_DISC2] AS [RATE_DISC2], 
+    [MCUST].[RATE_DISC3] AS [RATE_DISC3], 
+    [MCUST].[ID_1] AS [ID_1], 
+    [MCUST].[ID_2] AS [ID_2], 
+    [MCUST].[ID_3] AS [ID_3], 
+    [MCUST].[ID_4] AS [ID_4], 
+    [MCUST].[NOS_PAY] AS [NOS_PAY], 
+    [MCUST].[AMT_P_PAY] AS [AMT_P_PAY], 
+    [MCUST].[BIRTH_DATE] AS [BIRTH_DATE], 
+    [MCUST].[SPEC_DATE] AS [SPEC_DATE], 
+    [MCUST].[COMM_AMT] AS [COMM_AMT], 
+    [MCUST].[COMM_RATE] AS [COMM_RATE], 
+    [MCUST].[CHG_RATE] AS [CHG_RATE], 
+    [MCUST].[ACC_CODE] AS [ACC_CODE], 
+    [MCUST].[DEPART_ID] AS [DEPART_ID], 
+    [MCUST].[INV_COUNT] AS [INV_COUNT], 
+    [MCUST].[HIST] AS [HIST], 
+    [MCUST].[FLAG] AS [FLAG], 
+    [MCUST].[OFF_HOUR] AS [OFF_HOUR], 
+    [MCUST].[WARNING] AS [WARNING], 
+    [MCUST].[AMT_HIST1] AS [AMT_HIST1], 
+    [MCUST].[AMT_HIST2] AS [AMT_HIST2], 
+    [MCUST].[QRTN_HIST1] AS [QRTN_HIST1], 
+    [MCUST].[QRTN_HIST2] AS [QRTN_HIST2], 
+    [MCUST].[QRTN_TIME1] AS [QRTN_TIME1], 
+    [MCUST].[QRTN_TIME2] AS [QRTN_TIME2], 
+    [MCUST].[AVG_RV] AS [AVG_RV], 
+    [MCUST].[ACTION] AS [ACTION], 
+    [MCUST].[DELE_DATE] AS [DELE_DATE], 
+    [MCUST].[KEYACCOUNT] AS [KEYACCOUNT], 
+    [MCUST].[DISC_AMT1] AS [DISC_AMT1], 
+    [MCUST].[DISC_AMT2] AS [DISC_AMT2], 
+    [MCUST].[DISC_AMT3] AS [DISC_AMT3], 
+    [MCUST].[DISC_AMT4] AS [DISC_AMT4], 
+    [MCUST].[DISC_AMT5] AS [DISC_AMT5], 
+    [MCUST].[DISC_ID1] AS [DISC_ID1], 
+    [MCUST].[DISC_ID2] AS [DISC_ID2], 
+    [MCUST].[DISC_ID3] AS [DISC_ID3], 
+    [MCUST].[DISC_ID4] AS [DISC_ID4], 
+    [MCUST].[DISC_ID5] AS [DISC_ID5], 
+    [MCUST].[DISC_1] AS [DISC_1], 
+    [MCUST].[DISC_2] AS [DISC_2], 
+    [MCUST].[DISC_3] AS [DISC_3], 
+    [MCUST].[DISC_4] AS [DISC_4], 
+    [MCUST].[DISC_5] AS [DISC_5], 
+    [MCUST].[RTN_CHQ_FG] AS [RTN_CHQ_FG], 
+    [MCUST].[TAX_ID] AS [TAX_ID], 
+    [MCUST].[BRANCH_NO] AS [BRANCH_NO], 
+    [MCUST].[BRANCHNAME] AS [BRANCHNAME], 
+    [MCUST].[ATTN_NAME] AS [ATTN_NAME], 
+    [MCUST].[POSITION] AS [POSITION], 
+    [MCUST].[POSITION_1] AS [POSITION_1], 
+    [MCUST].[CONTACT_1] AS [CONTACT_1], 
+    [MCUST].[POSITION_2] AS [POSITION_2], 
+    [MCUST].[CONTACT_2] AS [CONTACT_2], 
+    [MCUST].[POSITION_3] AS [POSITION_3], 
+    [MCUST].[CONTACT_3] AS [CONTACT_3], 
+    [MCUST].[POSITION_4] AS [POSITION_4], 
+    [MCUST].[CONTACT_4] AS [CONTACT_4], 
+    [MCUST].[POSITION_5] AS [POSITION_5], 
+    [MCUST].[CONTACT_5] AS [CONTACT_5], 
+    [MCUST].[POSITION_6] AS [POSITION_6], 
+    [MCUST].[CONTACT_6] AS [CONTACT_6], 
+    [MCUST].[POSITION_7] AS [POSITION_7], 
+    [MCUST].[CONTACT_7] AS [CONTACT_7], 
+    [MCUST].[POSITION_8] AS [POSITION_8], 
+    [MCUST].[CONTACT_8] AS [CONTACT_8], 
+    [MCUST].[POSITION_9] AS [POSITION_9], 
+    [MCUST].[CONTACT_9] AS [CONTACT_9], 
+    [MCUST].[POSITION10] AS [POSITION10], 
+    [MCUST].[CONTACT10] AS [CONTACT10], 
+    [MCUST].[TEL_1] AS [TEL_1], 
+    [MCUST].[TEL_2] AS [TEL_2], 
+    [MCUST].[TEL_3] AS [TEL_3], 
+    [MCUST].[TEL_4] AS [TEL_4], 
+    [MCUST].[TEL_5] AS [TEL_5], 
+    [MCUST].[TEL_6] AS [TEL_6], 
+    [MCUST].[TEL_7] AS [TEL_7], 
+    [MCUST].[TEL_8] AS [TEL_8], 
+    [MCUST].[TEL_9] AS [TEL_9], 
+    [MCUST].[TEL_10] AS [TEL_10], 
+    [MCUST].[SHIP_ID] AS [SHIP_ID], 
+    [MCUST].[NOTES_RV] AS [NOTES_RV], 
+    [MCUST].[ISUPDATE] AS [ISUPDATE], 
+    [MCUST].[CARD_ID] AS [CARD_ID], 
+    [MCUST].[SIGN_LOCA] AS [SIGN_LOCA], 
+    [MCUST].[CARDSTART] AS [CARDSTART], 
+    [MCUST].[CARDEND] AS [CARDEND], 
+    [MCUST].[CASH_DISC] AS [CASH_DISC], 
+    [MCUST].[CARD_DISC] AS [CARD_DISC], 
+    [MCUST].[SENDMAIL] AS [SENDMAIL], 
+    [MCUST].[ACTIVE] AS [ACTIVE], 
+    [MCUST].[G1_COMP] AS [G1_COMP], 
+    [MCUST].[G1_CONTACT] AS [G1_CONTACT], 
+    [MCUST].[G1_ADDRESS] AS [G1_ADDRESS], 
+    [MCUST].[G1_AMPHUR] AS [G1_AMPHUR], 
+    [MCUST].[G1_TAMBON] AS [G1_TAMBON], 
+    [MCUST].[G1_CITY] AS [G1_CITY], 
+    [MCUST].[G1_ZIPCODE] AS [G1_ZIPCODE], 
+    [MCUST].[G1_PHONE] AS [G1_PHONE], 
+    [MCUST].[G1_ID] AS [G1_ID], 
+    [MCUST].[G2_COMP] AS [G2_COMP], 
+    [MCUST].[G2_CONTACT] AS [G2_CONTACT], 
+    [MCUST].[G2_ADDRESS] AS [G2_ADDRESS], 
+    [MCUST].[G2_AMPHUR] AS [G2_AMPHUR], 
+    [MCUST].[G2_TAMBON] AS [G2_TAMBON], 
+    [MCUST].[G2_CITY] AS [G2_CITY], 
+    [MCUST].[G2_ZIPCODE] AS [G2_ZIPCODE], 
+    [MCUST].[G2_PHONE] AS [G2_PHONE], 
+    [MCUST].[G2_ID] AS [G2_ID], 
+    [MCUST].[id_no] AS [id_no]
+    FROM [dbo].[MCUST] AS [MCUST]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

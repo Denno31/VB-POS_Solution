@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="POSModelStoreContainer" CdmEntityContainer="POSEntities">
+    <EntitySetMapping Name="N_CUST_SALE_SLIP_TRAN">
+      <EntityTypeMapping TypeName="POSModel.N_CUST_SALE_SLIP_TRAN">
+        <MappingFragment StoreEntitySet="N_CUST_SALE_SLIP_TRAN">
+          <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+          <ScalarProperty Name="SALE_SLIP_ID" ColumnName="SALE_SLIP_ID" />
+          <ScalarProperty Name="DETAIL" ColumnName="DETAIL" />
+          <ScalarProperty Name="STK_ID" ColumnName="STK_ID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PROD_CODE" ColumnName="PROD_CODE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MCUST">
+      <EntityTypeMapping TypeName="POSModel.MCUST">
+        <MappingFragment StoreEntitySet="MCUST">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="ENG_NAME" ColumnName="ENG_NAME" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+          <ScalarProperty Name="COLL_DAYS" ColumnName="COLL_DAYS" />
+          <ScalarProperty Name="CR_DAYS" ColumnName="CR_DAYS" />
+          <ScalarProperty Name="CR_LIMIT" ColumnName="CR_LIMIT" />
+          <ScalarProperty Name="CR_LIMIT_D" ColumnName="CR_LIMIT_D" />
+          <ScalarProperty Name="CR_HIST1" ColumnName="CR_HIST1" />
+          <ScalarProperty Name="CR_HIST1_D" ColumnName="CR_HIST1_D" />
+          <ScalarProperty Name="CR_HIST2" ColumnName="CR_HIST2" />
+          <ScalarProperty Name="CR_HIST2_D" ColumnName="CR_HIST2_D" />
+          <ScalarProperty Name="B_F_BK_AMT" ColumnName="B_F_BK_AMT" />
+          <ScalarProperty Name="B_F_AMT" ColumnName="B_F_AMT" />
+          <ScalarProperty Name="INV_NOSPRE" ColumnName="INV_NOSPRE" />
+          <ScalarProperty Name="BAL_AMTPRE" ColumnName="BAL_AMTPRE" />
+          <ScalarProperty Name="BAL_AMT" ColumnName="BAL_AMT" />
+          <ScalarProperty Name="BAL_ADV" ColumnName="BAL_ADV" />
+          <ScalarProperty Name="CR_BAL_CSH" ColumnName="CR_BAL_CSH" />
+          <ScalarProperty Name="CR_BAL_CHQ" ColumnName="CR_BAL_CHQ" />
+          <ScalarProperty Name="INT_RATE" ColumnName="INT_RATE" />
+          <ScalarProperty Name="INT_EXIN" ColumnName="INT_EXIN" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="TYPE_1" ColumnName="TYPE_1" />
+          <ScalarProperty Name="TYPE_2" ColumnName="TYPE_2" />
+          <ScalarProperty Name="SALE_ID" ColumnName="SALE_ID" />
+          <ScalarProperty Name="SHIP_NAME" ColumnName="SHIP_NAME" />
+          <ScalarProperty Name="SH_NAME" ColumnName="SH_NAME" />
+          <ScalarProperty Name="SH_ADDRESS" ColumnName="SH_ADDRESS" />
+          <ScalarProperty Name="SH_TAMBON" ColumnName="SH_TAMBON" />
+          <ScalarProperty Name="SH_AMPHUR" ColumnName="SH_AMPHUR" />
+          <ScalarProperty Name="SH_CITY" ColumnName="SH_CITY" />
+          <ScalarProperty Name="SH_ZIP" ColumnName="SH_ZIP" />
+          <ScalarProperty Name="SHIP_PHONE" ColumnName="SHIP_PHONE" />
+          <ScalarProperty Name="SH_TEL_EXT" ColumnName="SH_TEL_EXT" />
+          <ScalarProperty Name="SH_TEL_2" ColumnName="SH_TEL_2" />
+          <ScalarProperty Name="SHIP_FAX" ColumnName="SHIP_FAX" />
+          <ScalarProperty Name="SH_RATE" ColumnName="SH_RATE" />
+          <ScalarProperty Name="SH_TAX" ColumnName="SH_TAX" />
+          <ScalarProperty Name="SH_BRANCH" ColumnName="SH_BRANCH" />
+          <ScalarProperty Name="SH_DESC" ColumnName="SH_DESC" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="TAMBON" ColumnName="TAMBON" />
+          <ScalarProperty Name="AMPHUR" ColumnName="AMPHUR" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+          <ScalarProperty Name="AMP_ID" ColumnName="AMP_ID" />
+          <ScalarProperty Name="TAMBON_ID" ColumnName="TAMBON_ID" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="PHONE_EXT" ColumnName="PHONE_EXT" />
+          <ScalarProperty Name="PHONE_2" ColumnName="PHONE_2" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+          <ScalarProperty Name="LAST_SA" ColumnName="LAST_SA" />
+          <ScalarProperty Name="RATE_PRICE" ColumnName="RATE_PRICE" />
+          <ScalarProperty Name="RATE_VAT" ColumnName="RATE_VAT" />
+          <ScalarProperty Name="RATE_DISC1" ColumnName="RATE_DISC1" />
+          <ScalarProperty Name="RATE_DISC2" ColumnName="RATE_DISC2" />
+          <ScalarProperty Name="RATE_DISC3" ColumnName="RATE_DISC3" />
+          <ScalarProperty Name="ID_1" ColumnName="ID_1" />
+          <ScalarProperty Name="ID_2" ColumnName="ID_2" />
+          <ScalarProperty Name="ID_3" ColumnName="ID_3" />
+          <ScalarProperty Name="ID_4" ColumnName="ID_4" />
+          <ScalarProperty Name="NOS_PAY" ColumnName="NOS_PAY" />
+          <ScalarProperty Name="AMT_P_PAY" ColumnName="AMT_P_PAY" />
+          <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+          <ScalarProperty Name="SPEC_DATE" ColumnName="SPEC_DATE" />
+          <ScalarProperty Name="COMM_AMT" ColumnName="COMM_AMT" />
+          <ScalarProperty Name="COMM_RATE" ColumnName="COMM_RATE" />
+          <ScalarProperty Name="CHG_RATE" ColumnName="CHG_RATE" />
+          <ScalarProperty Name="ACC_CODE" ColumnName="ACC_CODE" />
+          <ScalarProperty Name="DEPART_ID" ColumnName="DEPART_ID" />
+          <ScalarProperty Name="INV_COUNT" ColumnName="INV_COUNT" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="OFF_HOUR" ColumnName="OFF_HOUR" />
+          <ScalarProperty Name="WARNING" ColumnName="WARNING" />
+          <ScalarProperty Name="AMT_HIST1" ColumnName="AMT_HIST1" />
+          <ScalarProperty Name="AMT_HIST2" ColumnName="AMT_HIST2" />
+          <ScalarProperty Name="QRTN_HIST1" ColumnName="QRTN_HIST1" />
+          <ScalarProperty Name="QRTN_HIST2" ColumnName="QRTN_HIST2" />
+          <ScalarProperty Name="QRTN_TIME1" ColumnName="QRTN_TIME1" />
+          <ScalarProperty Name="QRTN_TIME2" ColumnName="QRTN_TIME2" />
+          <ScalarProperty Name="AVG_RV" ColumnName="AVG_RV" />
+          <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+          <ScalarProperty Name="DELE_DATE" ColumnName="DELE_DATE" />
+          <ScalarProperty Name="KEYACCOUNT" ColumnName="KEYACCOUNT" />
+          <ScalarProperty Name="DISC_AMT1" ColumnName="DISC_AMT1" />
+          <ScalarProperty Name="DISC_AMT2" ColumnName="DISC_AMT2" />
+          <ScalarProperty Name="DISC_AMT3" ColumnName="DISC_AMT3" />
+          <ScalarProperty Name="DISC_AMT4" ColumnName="DISC_AMT4" />
+          <ScalarProperty Name="DISC_AMT5" ColumnName="DISC_AMT5" />
+          <ScalarProperty Name="DISC_ID1" ColumnName="DISC_ID1" />
+          <ScalarProperty Name="DISC_ID2" ColumnName="DISC_ID2" />
+          <ScalarProperty Name="DISC_ID3" ColumnName="DISC_ID3" />
+          <ScalarProperty Name="DISC_ID4" ColumnName="DISC_ID4" />
+          <ScalarProperty Name="DISC_ID5" ColumnName="DISC_ID5" />
+          <ScalarProperty Name="DISC_1" ColumnName="DISC_1" />
+          <ScalarProperty Name="DISC_2" ColumnName="DISC_2" />
+          <ScalarProperty Name="DISC_3" ColumnName="DISC_3" />
+          <ScalarProperty Name="DISC_4" ColumnName="DISC_4" />
+          <ScalarProperty Name="DISC_5" ColumnName="DISC_5" />
+          <ScalarProperty Name="RTN_CHQ_FG" ColumnName="RTN_CHQ_FG" />
+          <ScalarProperty Name="TAX_ID" ColumnName="TAX_ID" />
+          <ScalarProperty Name="BRANCH_NO" ColumnName="BRANCH_NO" />
+          <ScalarProperty Name="BRANCHNAME" ColumnName="BRANCHNAME" />
+          <ScalarProperty Name="ATTN_NAME" ColumnName="ATTN_NAME" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="POSITION_1" ColumnName="POSITION_1" />
+          <ScalarProperty Name="CONTACT_1" ColumnName="CONTACT_1" />
+          <ScalarProperty Name="POSITION_2" ColumnName="POSITION_2" />
+          <ScalarProperty Name="CONTACT_2" ColumnName="CONTACT_2" />
+          <ScalarProperty Name="POSITION_3" ColumnName="POSITION_3" />
+          <ScalarProperty Name="CONTACT_3" ColumnName="CONTACT_3" />
+          <ScalarProperty Name="POSITION_4" ColumnName="POSITION_4" />
+          <ScalarProperty Name="CONTACT_4" ColumnName="CONTACT_4" />
+          <ScalarProperty Name="POSITION_5" ColumnName="POSITION_5" />
+          <ScalarProperty Name="CONTACT_5" ColumnName="CONTACT_5" />
+          <ScalarProperty Name="POSITION_6" ColumnName="POSITION_6" />
+          <ScalarProperty Name="CONTACT_6" ColumnName="CONTACT_6" />
+          <ScalarProperty Name="POSITION_7" ColumnName="POSITION_7" />
+          <ScalarProperty Name="CONTACT_7" ColumnName="CONTACT_7" />
+          <ScalarProperty Name="POSITION_8" ColumnName="POSITION_8" />
+          <ScalarProperty Name="CONTACT_8" ColumnName="CONTACT_8" />
+          <ScalarProperty Name="POSITION_9" ColumnName="POSITION_9" />
+          <ScalarProperty Name="CONTACT_9" ColumnName="CONTACT_9" />
+          <ScalarProperty Name="POSITION10" ColumnName="POSITION10" />
+          <ScalarProperty Name="CONTACT10" ColumnName="CONTACT10" />
+          <ScalarProperty Name="TEL_1" ColumnName="TEL_1" />
+          <ScalarProperty Name="TEL_2" ColumnName="TEL_2" />
+          <ScalarProperty Name="TEL_3" ColumnName="TEL_3" />
+          <ScalarProperty Name="TEL_4" ColumnName="TEL_4" />
+          <ScalarProperty Name="TEL_5" ColumnName="TEL_5" />
+          <ScalarProperty Name="TEL_6" ColumnName="TEL_6" />
+          <ScalarProperty Name="TEL_7" ColumnName="TEL_7" />
+          <ScalarProperty Name="TEL_8" ColumnName="TEL_8" />
+          <ScalarProperty Name="TEL_9" ColumnName="TEL_9" />
+          <ScalarProperty Name="TEL_10" ColumnName="TEL_10" />
+          <ScalarProperty Name="SHIP_ID" ColumnName="SHIP_ID" />
+          <ScalarProperty Name="NOTES_RV" ColumnName="NOTES_RV" />
+          <ScalarProperty Name="ISUPDATE" ColumnName="ISUPDATE" />
+          <ScalarProperty Name="CARD_ID" ColumnName="CARD_ID" />
+          <ScalarProperty Name="SIGN_LOCA" ColumnName="SIGN_LOCA" />
+          <ScalarProperty Name="CARDSTART" ColumnName="CARDSTART" />
+          <ScalarProperty Name="CARDEND" ColumnName="CARDEND" />
+          <ScalarProperty Name="CASH_DISC" ColumnName="CASH_DISC" />
+          <ScalarProperty Name="CARD_DISC" ColumnName="CARD_DISC" />
+          <ScalarProperty Name="SENDMAIL" ColumnName="SENDMAIL" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="G1_COMP" ColumnName="G1_COMP" />
+          <ScalarProperty Name="G1_CONTACT" ColumnName="G1_CONTACT" />
+          <ScalarProperty Name="G1_ADDRESS" ColumnName="G1_ADDRESS" />
+          <ScalarProperty Name="G1_AMPHUR" ColumnName="G1_AMPHUR" />
+          <ScalarProperty Name="G1_TAMBON" ColumnName="G1_TAMBON" />
+          <ScalarProperty Name="G1_CITY" ColumnName="G1_CITY" />
+          <ScalarProperty Name="G1_ZIPCODE" ColumnName="G1_ZIPCODE" />
+          <ScalarProperty Name="G1_PHONE" ColumnName="G1_PHONE" />
+          <ScalarProperty Name="G1_ID" ColumnName="G1_ID" />
+          <ScalarProperty Name="G2_COMP" ColumnName="G2_COMP" />
+          <ScalarProperty Name="G2_CONTACT" ColumnName="G2_CONTACT" />
+          <ScalarProperty Name="G2_ADDRESS" ColumnName="G2_ADDRESS" />
+          <ScalarProperty Name="G2_AMPHUR" ColumnName="G2_AMPHUR" />
+          <ScalarProperty Name="G2_TAMBON" ColumnName="G2_TAMBON" />
+          <ScalarProperty Name="G2_CITY" ColumnName="G2_CITY" />
+          <ScalarProperty Name="G2_ZIPCODE" ColumnName="G2_ZIPCODE" />
+          <ScalarProperty Name="G2_PHONE" ColumnName="G2_PHONE" />
+          <ScalarProperty Name="G2_ID" ColumnName="G2_ID" />
+          <ScalarProperty Name="id_no" ColumnName="id_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_cust_read" FunctionName="POSModel.Store.usp_cust_read">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POSModel.usp_cust_read_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="ENG_NAME" ColumnName="ENG_NAME" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+          <ScalarProperty Name="COLL_DAYS" ColumnName="COLL_DAYS" />
+          <ScalarProperty Name="CR_DAYS" ColumnName="CR_DAYS" />
+          <ScalarProperty Name="CR_LIMIT" ColumnName="CR_LIMIT" />
+          <ScalarProperty Name="CR_LIMIT_D" ColumnName="CR_LIMIT_D" />
+          <ScalarProperty Name="CR_HIST1" ColumnName="CR_HIST1" />
+          <ScalarProperty Name="CR_HIST1_D" ColumnName="CR_HIST1_D" />
+          <ScalarProperty Name="CR_HIST2" ColumnName="CR_HIST2" />
+          <ScalarProperty Name="CR_HIST2_D" ColumnName="CR_HIST2_D" />
+          <ScalarProperty Name="B_F_BK_AMT" ColumnName="B_F_BK_AMT" />
+          <ScalarProperty Name="B_F_AMT" ColumnName="B_F_AMT" />
+          <ScalarProperty Name="INV_NOSPRE" ColumnName="INV_NOSPRE" />
+          <ScalarProperty Name="BAL_AMTPRE" ColumnName="BAL_AMTPRE" />
+          <ScalarProperty Name="BAL_AMT" ColumnName="BAL_AMT" />
+          <ScalarProperty Name="BAL_ADV" ColumnName="BAL_ADV" />
+          <ScalarProperty Name="CR_BAL_CSH" ColumnName="CR_BAL_CSH" />
+          <ScalarProperty Name="CR_BAL_CHQ" ColumnName="CR_BAL_CHQ" />
+          <ScalarProperty Name="INT_RATE" ColumnName="INT_RATE" />
+          <ScalarProperty Name="INT_EXIN" ColumnName="INT_EXIN" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="TYPE_1" ColumnName="TYPE_1" />
+          <ScalarProperty Name="TYPE_2" ColumnName="TYPE_2" />
+          <ScalarProperty Name="SALE_ID" ColumnName="SALE_ID" />
+          <ScalarProperty Name="SHIP_NAME" ColumnName="SHIP_NAME" />
+          <ScalarProperty Name="SH_NAME" ColumnName="SH_NAME" />
+          <ScalarProperty Name="SH_ADDRESS" ColumnName="SH_ADDRESS" />
+          <ScalarProperty Name="SH_TAMBON" ColumnName="SH_TAMBON" />
+          <ScalarProperty Name="SH_AMPHUR" ColumnName="SH_AMPHUR" />
+          <ScalarProperty Name="SH_CITY" ColumnName="SH_CITY" />
+          <ScalarProperty Name="SH_ZIP" ColumnName="SH_ZIP" />
+          <ScalarProperty Name="SHIP_PHONE" ColumnName="SHIP_PHONE" />
+          <ScalarProperty Name="SH_TEL_EXT" ColumnName="SH_TEL_EXT" />
+          <ScalarProperty Name="SH_TEL_2" ColumnName="SH_TEL_2" />
+          <ScalarProperty Name="SHIP_FAX" ColumnName="SHIP_FAX" />
+          <ScalarProperty Name="SH_RATE" ColumnName="SH_RATE" />
+          <ScalarProperty Name="SH_TAX" ColumnName="SH_TAX" />
+          <ScalarProperty Name="SH_BRANCH" ColumnName="SH_BRANCH" />
+          <ScalarProperty Name="SH_DESC" ColumnName="SH_DESC" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="TAMBON" ColumnName="TAMBON" />
+          <ScalarProperty Name="AMPHUR" ColumnName="AMPHUR" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+          <ScalarProperty Name="AMP_ID" ColumnName="AMP_ID" />
+          <ScalarProperty Name="TAMBON_ID" ColumnName="TAMBON_ID" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="PHONE_EXT" ColumnName="PHONE_EXT" />
+          <ScalarProperty Name="PHONE_2" ColumnName="PHONE_2" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+          <ScalarProperty Name="LAST_SA" ColumnName="LAST_SA" />
+          <ScalarProperty Name="RATE_PRICE" ColumnName="RATE_PRICE" />
+          <ScalarProperty Name="RATE_VAT" ColumnName="RATE_VAT" />
+          <ScalarProperty Name="RATE_DISC1" ColumnName="RATE_DISC1" />
+          <ScalarProperty Name="RATE_DISC2" ColumnName="RATE_DISC2" />
+          <ScalarProperty Name="RATE_DISC3" ColumnName="RATE_DISC3" />
+          <ScalarProperty Name="ID_1" ColumnName="ID_1" />
+          <ScalarProperty Name="ID_2" ColumnName="ID_2" />
+          <ScalarProperty Name="ID_3" ColumnName="ID_3" />
+          <ScalarProperty Name="ID_4" ColumnName="ID_4" />
+          <ScalarProperty Name="NOS_PAY" ColumnName="NOS_PAY" />
+          <ScalarProperty Name="AMT_P_PAY" ColumnName="AMT_P_PAY" />
+          <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+          <ScalarProperty Name="SPEC_DATE" ColumnName="SPEC_DATE" />
+          <ScalarProperty Name="COMM_AMT" ColumnName="COMM_AMT" />
+          <ScalarProperty Name="COMM_RATE" ColumnName="COMM_RATE" />
+          <ScalarProperty Name="CHG_RATE" ColumnName="CHG_RATE" />
+          <ScalarProperty Name="ACC_CODE" ColumnName="ACC_CODE" />
+          <ScalarProperty Name="DEPART_ID" ColumnName="DEPART_ID" />
+          <ScalarProperty Name="INV_COUNT" ColumnName="INV_COUNT" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="OFF_HOUR" ColumnName="OFF_HOUR" />
+          <ScalarProperty Name="WARNING" ColumnName="WARNING" />
+          <ScalarProperty Name="AMT_HIST1" ColumnName="AMT_HIST1" />
+          <ScalarProperty Name="AMT_HIST2" ColumnName="AMT_HIST2" />
+          <ScalarProperty Name="QRTN_HIST1" ColumnName="QRTN_HIST1" />
+          <ScalarProperty Name="QRTN_HIST2" ColumnName="QRTN_HIST2" />
+          <ScalarProperty Name="QRTN_TIME1" ColumnName="QRTN_TIME1" />
+          <ScalarProperty Name="QRTN_TIME2" ColumnName="QRTN_TIME2" />
+          <ScalarProperty Name="AVG_RV" ColumnName="AVG_RV" />
+          <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+          <ScalarProperty Name="DELE_DATE" ColumnName="DELE_DATE" />
+          <ScalarProperty Name="KEYACCOUNT" ColumnName="KEYACCOUNT" />
+          <ScalarProperty Name="DISC_AMT1" ColumnName="DISC_AMT1" />
+          <ScalarProperty Name="DISC_AMT2" ColumnName="DISC_AMT2" />
+          <ScalarProperty Name="DISC_AMT3" ColumnName="DISC_AMT3" />
+          <ScalarProperty Name="DISC_AMT4" ColumnName="DISC_AMT4" />
+          <ScalarProperty Name="DISC_AMT5" ColumnName="DISC_AMT5" />
+          <ScalarProperty Name="DISC_ID1" ColumnName="DISC_ID1" />
+          <ScalarProperty Name="DISC_ID2" ColumnName="DISC_ID2" />
+          <ScalarProperty Name="DISC_ID3" ColumnName="DISC_ID3" />
+          <ScalarProperty Name="DISC_ID4" ColumnName="DISC_ID4" />
+          <ScalarProperty Name="DISC_ID5" ColumnName="DISC_ID5" />
+          <ScalarProperty Name="DISC_1" ColumnName="DISC_1" />
+          <ScalarProperty Name="DISC_2" ColumnName="DISC_2" />
+          <ScalarProperty Name="DISC_3" ColumnName="DISC_3" />
+          <ScalarProperty Name="DISC_4" ColumnName="DISC_4" />
+          <ScalarProperty Name="DISC_5" ColumnName="DISC_5" />
+          <ScalarProperty Name="RTN_CHQ_FG" ColumnName="RTN_CHQ_FG" />
+          <ScalarProperty Name="TAX_ID" ColumnName="TAX_ID" />
+          <ScalarProperty Name="BRANCH_NO" ColumnName="BRANCH_NO" />
+          <ScalarProperty Name="BRANCHNAME" ColumnName="BRANCHNAME" />
+          <ScalarProperty Name="ATTN_NAME" ColumnName="ATTN_NAME" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="POSITION_1" ColumnName="POSITION_1" />
+          <ScalarProperty Name="CONTACT_1" ColumnName="CONTACT_1" />
+          <ScalarProperty Name="POSITION_2" ColumnName="POSITION_2" />
+          <ScalarProperty Name="CONTACT_2" ColumnName="CONTACT_2" />
+          <ScalarProperty Name="POSITION_3" ColumnName="POSITION_3" />
+          <ScalarProperty Name="CONTACT_3" ColumnName="CONTACT_3" />
+          <ScalarProperty Name="POSITION_4" ColumnName="POSITION_4" />
+          <ScalarProperty Name="CONTACT_4" ColumnName="CONTACT_4" />
+          <ScalarProperty Name="POSITION_5" ColumnName="POSITION_5" />
+          <ScalarProperty Name="CONTACT_5" ColumnName="CONTACT_5" />
+          <ScalarProperty Name="POSITION_6" ColumnName="POSITION_6" />
+          <ScalarProperty Name="CONTACT_6" ColumnName="CONTACT_6" />
+          <ScalarProperty Name="POSITION_7" ColumnName="POSITION_7" />
+          <ScalarProperty Name="CONTACT_7" ColumnName="CONTACT_7" />
+          <ScalarProperty Name="POSITION_8" ColumnName="POSITION_8" />
+          <ScalarProperty Name="CONTACT_8" ColumnName="CONTACT_8" />
+          <ScalarProperty Name="POSITION_9" ColumnName="POSITION_9" />
+          <ScalarProperty Name="CONTACT_9" ColumnName="CONTACT_9" />
+          <ScalarProperty Name="POSITION10" ColumnName="POSITION10" />
+          <ScalarProperty Name="CONTACT10" ColumnName="CONTACT10" />
+          <ScalarProperty Name="TEL_1" ColumnName="TEL_1" />
+          <ScalarProperty Name="TEL_2" ColumnName="TEL_2" />
+          <ScalarProperty Name="TEL_3" ColumnName="TEL_3" />
+          <ScalarProperty Name="TEL_4" ColumnName="TEL_4" />
+          <ScalarProperty Name="TEL_5" ColumnName="TEL_5" />
+          <ScalarProperty Name="TEL_6" ColumnName="TEL_6" />
+          <ScalarProperty Name="TEL_7" ColumnName="TEL_7" />
+          <ScalarProperty Name="TEL_8" ColumnName="TEL_8" />
+          <ScalarProperty Name="TEL_9" ColumnName="TEL_9" />
+          <ScalarProperty Name="TEL_10" ColumnName="TEL_10" />
+          <ScalarProperty Name="SHIP_ID" ColumnName="SHIP_ID" />
+          <ScalarProperty Name="NOTES_RV" ColumnName="NOTES_RV" />
+          <ScalarProperty Name="ISUPDATE" ColumnName="ISUPDATE" />
+          <ScalarProperty Name="CARD_ID" ColumnName="CARD_ID" />
+          <ScalarProperty Name="SIGN_LOCA" ColumnName="SIGN_LOCA" />
+          <ScalarProperty Name="CARDSTART" ColumnName="CARDSTART" />
+          <ScalarProperty Name="CARDEND" ColumnName="CARDEND" />
+          <ScalarProperty Name="CASH_DISC" ColumnName="CASH_DISC" />
+          <ScalarProperty Name="CARD_DISC" ColumnName="CARD_DISC" />
+          <ScalarProperty Name="SENDMAIL" ColumnName="SENDMAIL" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="G1_COMP" ColumnName="G1_COMP" />
+          <ScalarProperty Name="G1_CONTACT" ColumnName="G1_CONTACT" />
+          <ScalarProperty Name="G1_ADDRESS" ColumnName="G1_ADDRESS" />
+          <ScalarProperty Name="G1_AMPHUR" ColumnName="G1_AMPHUR" />
+          <ScalarProperty Name="G1_TAMBON" ColumnName="G1_TAMBON" />
+          <ScalarProperty Name="G1_CITY" ColumnName="G1_CITY" />
+          <ScalarProperty Name="G1_ZIPCODE" ColumnName="G1_ZIPCODE" />
+          <ScalarProperty Name="G1_PHONE" ColumnName="G1_PHONE" />
+          <ScalarProperty Name="G1_ID" ColumnName="G1_ID" />
+          <ScalarProperty Name="G2_COMP" ColumnName="G2_COMP" />
+          <ScalarProperty Name="G2_CONTACT" ColumnName="G2_CONTACT" />
+          <ScalarProperty Name="G2_ADDRESS" ColumnName="G2_ADDRESS" />
+          <ScalarProperty Name="G2_AMPHUR" ColumnName="G2_AMPHUR" />
+          <ScalarProperty Name="G2_TAMBON" ColumnName="G2_TAMBON" />
+          <ScalarProperty Name="G2_CITY" ColumnName="G2_CITY" />
+          <ScalarProperty Name="G2_ZIPCODE" ColumnName="G2_ZIPCODE" />
+          <ScalarProperty Name="G2_PHONE" ColumnName="G2_PHONE" />
+          <ScalarProperty Name="G2_ID" ColumnName="G2_ID" />
+          <ScalarProperty Name="id_no" ColumnName="id_no" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_head_insert" FunctionName="POSModel.Store.usp_saleSlip_head_insert" />
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_head_Read" FunctionName="POSModel.Store.usp_saleSlip_head_Read">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POSModel.usp_saleSlip_head_Read_Result">
+          <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+          <ScalarProperty Name="SALE_SLIP_ID" ColumnName="SALE_SLIP_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_head_running_read" FunctionName="POSModel.Store.usp_saleSlip_head_running_read" />
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_head_search_doc_Read" FunctionName="POSModel.Store.usp_saleSlip_head_search_doc_Read">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POSModel.usp_saleSlip_head_search_doc_Read_Result">
+          <ScalarProperty Name="sale_slip_id" ColumnName="sale_slip_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_head_update" FunctionName="POSModel.Store.usp_saleSlip_head_update" />
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_tran_cancel_update" FunctionName="POSModel.Store.usp_saleSlip_tran_cancel_update" />
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_tran_insert" FunctionName="POSModel.Store.usp_saleSlip_tran_insert" />
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_tran_Read" FunctionName="POSModel.Store.usp_saleSlip_tran_Read">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POSModel.usp_saleSlip_tran_Read_Result">
+          <ScalarProperty Name="PROD_CODE" ColumnName="PROD_CODE" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_saleSlip_tran_update" FunctionName="POSModel.Store.usp_saleSlip_tran_update" />
+    <FunctionImportMapping FunctionImportName="usp_StockOnhand_Read" FunctionName="POSModel.Store.usp_StockOnhand_Read">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POSModel.usp_StockOnhand_Read_Result">
+          <ScalarProperty Name="PROD_CODE" ColumnName="PROD_CODE" />
+          <ScalarProperty Name="COST" ColumnName="COST" />
+          <ScalarProperty Name="VALUONHAND" ColumnName="VALUONHAND" />
+          <ScalarProperty Name="STK_ONHAND" ColumnName="STK_ONHAND" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="MSTK_BR">
+      <EntityTypeMapping TypeName="POSModel.MSTK_BR">
+        <MappingFragment StoreEntitySet="MSTK_BR">
+          <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="ACC_CODE" ColumnName="ACC_CODE" />
+          <ScalarProperty Name="LEN_CODE" ColumnName="LEN_CODE" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="PHONE_2" ColumnName="PHONE_2" />
+          <ScalarProperty Name="PHONE_EXT" ColumnName="PHONE_EXT" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="ENG_NAME" ColumnName="ENG_NAME" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="AMPHUR" ColumnName="AMPHUR" />
+          <ScalarProperty Name="TAMBON" ColumnName="TAMBON" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="TYPE_1" ColumnName="TYPE_1" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MBOOK">
+      <EntityTypeMapping TypeName="POSModel.MBOOK">
+        <MappingFragment StoreEntitySet="MBOOK">
+          <ScalarProperty Name="BOOK_TYPE" ColumnName="BOOK_TYPE" />
+          <ScalarProperty Name="BOOK_STCK" ColumnName="BOOK_STCK" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="VAT_RATE" ColumnName="VAT_RATE" />
+          <ScalarProperty Name="CAL_VAT_FG" ColumnName="CAL_VAT_FG" />
+          <ScalarProperty Name="LEN_NO" ColumnName="LEN_NO" />
+          <ScalarProperty Name="POSTFIX" ColumnName="POSTFIX" />
+          <ScalarProperty Name="CURR_NO" ColumnName="CURR_NO" />
+          <ScalarProperty Name="PREFIX" ColumnName="PREFIX" />
+          <ScalarProperty Name="GL_FORM" ColumnName="GL_FORM" />
+          <ScalarProperty Name="PRT_FORM" ColumnName="PRT_FORM" />
+          <ScalarProperty Name="BOOK_CASE" ColumnName="BOOK_CASE" />
+          <ScalarProperty Name="BOOK_FORM" ColumnName="BOOK_FORM" />
+          <ScalarProperty Name="ENG_DESC" ColumnName="ENG_DESC" />
+          <ScalarProperty Name="BOOK_DESC" ColumnName="BOOK_DESC" />
+          <ScalarProperty Name="BOOK_ID" ColumnName="BOOK_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
